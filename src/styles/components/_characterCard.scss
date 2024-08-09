@@ -1,0 +1,27 @@
+.card {
+  width: 330px;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  &-img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 200px;
+  }
+  &-title {
+    color: #000;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-5px);
+  }
+
+  @media (min-width: 1080px) {
+    width: 250px;
+  }
+}

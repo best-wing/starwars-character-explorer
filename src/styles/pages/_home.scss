@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+@use "../vendors/normalize";
+@use "../base/base";
+@use "../base/fonts";
+@use "../base/helpers";
+@use "../base/typography";
+@use "../themes/default";
+@use "../abstracts";
+
+.title {
+  font-size: 32px;
+  text-align: center;
+  @media (min-width: 1280px) {
+    font-size: 48px;
+  }
+}
+
+.card-board {
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.button {
+  margin: 20px auto;
+  display: block;
+  background-color: #fff;
+  padding: 8px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  &:hover {
+    cursor: pointer;
+    background-color: #ebe8e8;
+  }
+}
